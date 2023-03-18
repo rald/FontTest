@@ -96,13 +96,6 @@ int main(void) {
 
 		SDL_SetRenderTarget(renderer,texture);
 
-		r=rnd(256);
-		g=rnd(256);
-		b=rnd(256);
-
-
-		SDL_SetRenderDrawColor( renderer, r, g, b, 255 );
-
 
 
 		SDL_RenderDrawChar(renderer,font_pixels,FONT_WIDTH,FONT_HEIGHT,rnd(128),rnd(BUF_WIDTH)*FONT_WIDTH*PIXEL_SIZE,rnd(BUF_HEIGHT)*FONT_HEIGHT*PIXEL_SIZE,PIXEL_SIZE,palette[rnd(16)],palette[rnd(16)]);
